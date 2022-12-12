@@ -41,7 +41,6 @@ while True:
     for i in pg.event.get():
         if i.type == pg.QUIT:
             exit()
-
         if i.type == pg.MOUSEBUTTONDOWN:
             if i.button == 1:
                 create_square(space, i.pos)
@@ -52,5 +51,3 @@ while True:
 
     pg.display.flip()
     clock.tick(FPS)
-
-
